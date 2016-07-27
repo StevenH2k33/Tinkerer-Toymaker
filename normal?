@@ -1,0 +1,10 @@
+Enter file contents heregit clone https://github.com/servo/servo
+cd servo
+./mach build --dev
+./mach run tests/html/about-mozilla.html
+./mach build --release
+./mach run --release tests/html/about-mozilla.html
+./mach run [url]
+-p INTERVAL
+-s 
+-z
